@@ -19,7 +19,7 @@ jobs:
       run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
     - name: Build Docker Image
-      run: docker build -t ghcr.io/jobsoumya/Age-Calculator:latest .
+      run: docker build -t ghcr.io/jobsoumya/age-calculator:latest .
 
     - name: Push Image
-      run: docker push ghcr.io/jobsoumya/Age-Calculator:latest
+      run: docker push ghcr.io/jobsoumya/age-calculator:latest
